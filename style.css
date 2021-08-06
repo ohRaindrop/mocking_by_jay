@@ -7,13 +7,19 @@
 font h1, link, artisti font-family: 'Zen Dots', cursive;
 */
 
-::-webkit-scrollbar{
-    overflow-y: hidden;
-}
-
 html{
     max-width:100%;
     overflow-x: hidden;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #F46036;
+    border-radius: 100px;
+}
+ 
+html::-webkit-scrollbar-thumb {
+    background-color: #818479;
+    border-radius: 100px;
 }
 
 body{
@@ -38,11 +44,14 @@ a:hover{
 }
 
 .parallax{
-    background-image: url("https://images.unsplash.com/photo-1514824068966-23f7d658a8b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;    
+    background-position: center;  
+}
+
+.dark-overlay{
+
 }
 
 /** HEADER */
@@ -50,7 +59,8 @@ header{
     height:100vh;
     position: relative;
     
-    filter:grayscale();
+    background-image: url("https://images.unsplash.com/photo-1514824068966-23f7d658a8b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    filter:grayscale(100%);
 }
 
 .label-name{
@@ -64,6 +74,11 @@ header{
 }
 
 /** NAVBAR */
+
+nav{
+    background-color: #0C0C0C;
+}
+
 #navbarNavAltMarkup{
     justify-content: space-between;
 }
@@ -80,28 +95,61 @@ header{
     color:#F46036;
 }
 
-.nav-link::before{
-    content:'';
-    background-color: lightgrey;
-    width:5px;
-    height:5px;
-}
-
 .nav-link.active{
     color:#F46036;
 }
 
+.nav-link:nth-child(n+1)::before{
+    content:' ';
+    background-color: #818479;
+    width:5px;
+    height:5px;
+}
+
 /** ARTISTS */
 .artist{
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 1rem 2rem 0 2rem;
 }
 
-.artist > img{
+.artist > a > img{
     width:min-content;
     height: min-content;
+
+    filter:grayscale() brightness(0.5)
 }
 
-/** */
-/** */
-/** */
+.artist > a {
+    position:relative;
+}
+
+.artist-name{
+    position:absolute;
+    left:50%;
+    top:70%;
+    transform: translate(-50%,-50%);
+}
+
+.artist-genre{
+    text-align: center;
+}
+/** PRESS */
+
+.date,
+.from-website{
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+
+.title-of-article{
+    display: block;
+    
+    text-transform: uppercase;
+
+}
+
+/** ABOUT */
+#about{
+    background-image:url("https://images.unsplash.com/photo-1613504061138-f3cdaeb7bbf7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80") ;
+}
+
+/** CONTACTS*/
