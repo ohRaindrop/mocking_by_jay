@@ -1,5 +1,6 @@
 /** COLORS 
 #F46036
+#349AF4
 #FBFEF9
 #818479
 #0C0C0C
@@ -34,6 +35,20 @@ h1, h2{
     font-family: 'Zen Dots', cursive;
 }
 
+section{
+    min-height: 80vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.section-title{
+    height: 20vh;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: #349AF4;
+}
+
 a{
     text-decoration: none;
     color:#FBFEF9;
@@ -51,7 +66,7 @@ a:hover{
 }
 
 .dark-overlay{
-
+    background-color: rgba(0,0,0,0.5);
 }
 
 /** HEADER */
@@ -96,15 +111,15 @@ nav{
 }
 
 .nav-link.active{
-    color:#F46036;
+    color:#349AF4;
 }
 
-.nav-link:nth-child(n+1)::before{
+/* .nav-link:nth-child(n+1)::before{
     content:' ';
     background-color: #818479;
     width:5px;
     height:5px;
-}
+} */
 
 /** ARTISTS */
 .artist{
@@ -132,7 +147,15 @@ nav{
 .artist-genre{
     text-align: center;
 }
+
 /** PRESS */
+.article{
+    margin:auto;
+    width:50%;
+    border-bottom: 2px solid #818479;
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
 
 .date,
 .from-website{
@@ -141,15 +164,25 @@ nav{
 }
 
 .title-of-article{
+    color:#F46036;
     display: block;
-    
     text-transform: uppercase;
+}
 
+.title-of-article:hover{
+    color:#349AF4;
 }
 
 /** ABOUT */
 #about{
+    width:100vw;
     background-image:url("https://images.unsplash.com/photo-1613504061138-f3cdaeb7bbf7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80") ;
 }
 
+@media (min-width:576px){
+    .about-content{
+        padding-left:3rem;
+        padding-right:3rem;
+    }
+}
 /** CONTACTS*/
