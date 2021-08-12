@@ -36,26 +36,32 @@ h1, h2{
 }
 
 section{
-    min-height: 80vh;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    position:relative;
+    min-height: 90vh;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .section-title{
-    height: 20vh;
+    height: 15vh;
+    
+    margin-top:5rem;
+
     text-align: center;
     text-transform: uppercase;
     text-decoration: underline;
     text-decoration-color: #349AF4;
+
+    letter-spacing: 2px;
 }
 
 a{
     text-decoration: none;
-    color:#FBFEF9;
+    color: #F46036;
 }
 
 a:hover{
-    color:#F46036;
+    color:#349AF4;
 }
 
 .parallax{
@@ -65,8 +71,22 @@ a:hover{
     background-position: center;  
 }
 
+.behind-overlay{
+    z-index:300;
+}
+
 .dark-overlay{
-    background-color: rgba(0,0,0,0.5);
+    height:100%;
+    width:100%;
+
+    position:absolute;
+
+    z-index:301;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+i {
+    padding: 0 0.5rem 0 0.5rem;
 }
 
 /** HEADER */
@@ -102,15 +122,15 @@ nav{
     color:#F46036;
 }
 
-.nav-link{
+.custom-link{
     color:#818479;
 }
 
-.nav-link:hover{
+.custom-link:hover{
     color:#F46036;
 }
 
-.nav-link.active{
+.custom-link.active{
     color:#349AF4;
 }
 
@@ -122,6 +142,11 @@ nav{
 } */
 
 /** ARTISTS */
+
+#artists{
+    background-color: #3d3f3a2c;
+}
+
 .artist{
     padding: 1rem 2rem 0 2rem;
 }
@@ -130,7 +155,7 @@ nav{
     width:min-content;
     height: min-content;
 
-    filter:grayscale() brightness(0.5)
+    filter:grayscale() brightness(0.2);
 }
 
 .artist > a {
@@ -145,6 +170,7 @@ nav{
 }
 
 .artist-genre{
+    color:#818479;
     text-align: center;
 }
 
@@ -177,6 +203,17 @@ nav{
 #about{
     width:100vw;
     background-image:url("https://images.unsplash.com/photo-1613504061138-f3cdaeb7bbf7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80") ;
+ }
+ 
+ /** need as dark-overlay bugs this section*/
+#about > *{
+    z-index:301;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.about-content{
+    margin-bottom:2rem;
+    overflow:auto;
 }
 
 @media (min-width:576px){
@@ -185,4 +222,32 @@ nav{
         padding-right:3rem;
     }
 }
+
 /** CONTACTS*/
+
+#contacts{
+}
+
+.contacts-content{
+    overflow:auto;
+    text-align: center;
+
+    margin-top: 2rem;
+}
+
+.contacts-content > .logo,
+.contacts-content > .contact-condition, 
+.contacts-content > .social {
+    margin-top:1rem;
+    margin-bottom:2rem;
+}
+
+address{
+    margin-top:3rem;
+    margin-bottom:1rem;
+}
+
+/** FOOTER */
+footer{
+    background-color: rgb(40, 41, 37);
+}

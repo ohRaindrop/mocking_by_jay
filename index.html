@@ -12,10 +12,12 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <!-- my css -->
-    <link href="style.css" rel="stylesheet">
-
+    <link href="style/style.css" rel="stylesheet">
+    artists/
     <!-- google fonts for main stuff -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,14 +28,19 @@
 </head>
 
 <body>
-    <header class="parallax">
-        <h1 class="label-name">
-            mocking by Jay
-        </h1>
-    </header>
+    <div class="behind-overlay">
+        <header class="parallax ">
+            <div class="dark-overlay">
+                <h1 class="label-name">
+                    mocking by Jay
+                </h1>
+            </div>
+        </header>
+    </div>
+
 
     <div class="content-with-nav">
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true"
@@ -45,10 +52,10 @@
                         mocking by jay
                     </div>
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#artist"> artists </a>
-                        <a class="nav-link" href="#press"> press </a>
-                        <a class="nav-link" href="#about">about</a>
-                        <a class="nav-link" href="#contacts">contacts</a>
+                        <a class="nav-link custom-link active" aria-current="page" href="#artists"> artists </a>
+                        <a class="nav-link custom-link" href="#press"> press </a>
+                        <a class="nav-link custom-link" href="#about">about</a>
+                        <a class="nav-link custom-link" href="#contacts">contacts</a>
                     </div>
                 </div>
             </div>
@@ -61,7 +68,7 @@
                 </div>
 
                 <div class="artist col-12 col-sm-6 col-md-4">
-                    <a href="puddu.html">
+                    <a href="artists/puddu.html">
                         <img src="https://images.unsplash.com/photo-1556296569-44d434fb28d6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
                             alt="a picture of this artist while on stage" class="img-fluid">
                         <div class="artist-name">
@@ -70,12 +77,11 @@
                                 soft - rock
                             </div>
                         </div>
-
                     </a>
                 </div>
 
                 <div class="artist col-12 col-sm-6 col-md-4">
-                    <a href="leo-price.html">
+                    <a href="artists/leo-price.html">
                         <img src="https://images.unsplash.com/photo-1604261155087-6872de077de9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=511&q=80"
                             alt="Leo while practicing in his hometown" class="img-fluid">
                         <div class="artist-name">
@@ -89,7 +95,7 @@
                 </div>
 
                 <div class="artist col-12 col-sm-6 col-md-4">
-                    <a href="doggy-hunt.html">
+                    <a href="artists/doggy-hunt.html">
                         <img src="https://images.unsplash.com/photo-1620642477222-7aef692dd0df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
                             alt="Doggy hunt while working on his new masterpiece" class="img-fluid">
                         <div class="artist-name">
@@ -103,7 +109,7 @@
                 </div>
 
                 <div class="artist col-12 col-sm-6 col-md-4">
-                    <a href="kami.html">
+                    <a href="artists/kami.html">
                         <img src="https://images.unsplash.com/photo-1496208612508-eb52fba7d94e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
                             alt="Kami during his last show in Italy" class="img-fluid">
                         <div class="artist-name">
@@ -117,7 +123,7 @@
                 </div>
 
                 <div class="artist col-12 col-sm-6 col-md-4">
-                    <a href="alex.html">
+                    <a href="artists/alex.html">
                         <img src="https://images.unsplash.com/photo-1613205907727-f125518565fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
                             alt="Alex while on a break between performances" class="img-fluid">
                         <div class="artist-name">
@@ -133,9 +139,9 @@
             </section>
 
             <section class="row" id="press">
-                <div class="col-12 section-title">
+                <h2 class="col-12 section-title">
                     Press
-                </div>
+                </h2>
                 <div class="col-12 articles-container">
                     <div class="col-12 article">
                         <span class="date"> 2 jan - </span>
@@ -163,34 +169,35 @@
                 </div>
             </section>
 
-            <section class="row parallax" id="about">
-                <div class="col-12 section-title">
-                    About
-                </div>
-                <div class="col-12 about-content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum sapiente cupiditate impedit
-                    facilis rem aut soluta ad minima, possimus ab inventore neque blanditiis animi eius! Omnis incidunt
-                    magni ipsum.
-                    Earum nam impedit sequi veniam libero cum sit, minima dignissimos dolorum commodi accusantium, eius
-                    ratione perferendis error! Labore possimus quae quis ullam placeat illum culpa repellat accusamus!
-                    Delectus, repellat. Dignissimos?
-                    Perferendis aliquid, asperiores laborum eveniet culpa eligendi nostrum voluptas delectus optio
-                    exercitationem soluta cum vel eos autem laboriosam neque deserunt qui quibusdam hic debitis,
-                    explicabo odio facilis quis officia? Inventore!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque obcaecati, porro dolorem alias
-                    quidem quis magni rem nesciunt omnis adipisci numquam, eum sapiente cupiditate autem iste vitae in,
-                    voluptas corrupti.
-                </div>
-            </section>
+            <div class="behind-overlay">
+                <section class="row parallax" id="about">
+                    <div>
+                        <h2 class="col-12 section-title">
+                            About
+                        </h2>
+                        <div class="col-12 about-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ut expedita iusto
+                            atque totam possimus provident repellendus, sint debitis a at beatae itaque. Sint in
+                            necessitatibus pariatur aperiam nam voluptas!
+                            Expedita quasi iure ipsa repudiandae porro officia id velit aspernatur sed. Similique,
+                            corporis tempore nisi numquam beatae quas quia, nihil tempora, nostrum commodi dolorem
+                            cupiditate aliquam aliquid sapiente nesciunt est.
+                            Culpa, maxime dicta provident minus earum porro illum. Quam, esse quaerat necessitatibus
+                            distinctio aut fuga totam laudantium minima quisquam provident, voluptatem soluta fugiat
+                            voluptas asperiores est hic sed autem odio.
+                        </div>
+                    </div>
+                </section>
+            </div>
 
             <section class="row" id="contacts">
-                <div class="col-12 section-title">
+                <h2 class="col-12 section-title">
                     contacts
-                </div>
-                <div class="row contacs-content">
-                    <div class="col-12 logo"> mocking by Jay </div>
+                </h2>
+                <div class="col-12 contacts-content">
+                    <!-- <div class="col-12 logo"> mocking by Jay </div> -->
                     <div class="col-12 contact-condition">
-                        we only accept submissions by email.
+                        we only accept submissions by email. <br>
                         please provide all relevant info and stream links only.
                     </div>
                     <address class="col-12">
@@ -200,12 +207,21 @@
                         <a href="mailto:#"> mailto@mail.com </a> <br>
                     </address>
                     <div class="col-12 social">
-                        follow us on our social media
-                        <a href="#" target="_blank" rel="noopener noreferrer"> facebook </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer"> youtube </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer"> spotify </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer"> sound cloud</a>
+                        follow us on our social media: <br>
+                        <a href="#" target="_blank" rel="noopener noreferrer" title="facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" title="youtube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" title="sound cloud">
+                            <i class="bi bi-music-note-beamed"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" title="spotify">
+                            <i class="bi bi-cloud"></i>
+                        </a>
                     </div>
+                </div>
             </section>
 
         </main>
