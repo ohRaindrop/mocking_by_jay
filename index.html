@@ -52,7 +52,7 @@
                         mocking by jay
                     </div>
                     <div class="navbar-nav">
-                        <a class="nav-link custom-link active" aria-current="page" href="#artists"> artists </a>
+                        <a class="nav-link custom-link" aria-current="page" href="#artists"> artists </a>
                         <a class="nav-link custom-link" href="#press"> press </a>
                         <a class="nav-link custom-link" href="#about">about</a>
                         <a class="nav-link custom-link" href="#contacts">contacts</a>
@@ -204,20 +204,21 @@
                         mocking by Jay <br>
                         Piazza della Loggia, Brescia <br>
                         0376-numero <br>
-                        <a href="mailto:#"> mailto@mail.com </a> <br>
+                        <a href="mailto:#" onclick="return false;"> mailto@mail.com </a> <br>
                     </address>
                     <div class="col-12 social">
                         follow us on our social media: <br>
-                        <a href="#" target="_blank" rel="noopener noreferrer" title="facebook">
+                        <a href="#" target="_blank" onclick="return false;" rel="noopener noreferrer" title="facebook">
                             <i class="bi bi-facebook"></i>
                         </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" title="youtube">
+                        <a href="#" target="_blank" onclick="return false;" rel="noopener noreferrer" title="youtube">
                             <i class="bi bi-youtube"></i>
                         </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" title="sound cloud">
+                        <a href="#" target="_blank" onclick="return false;" rel="noopener noreferrer"
+                            title="sound cloud">
                             <i class="bi bi-music-note-beamed"></i>
                         </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" title="spotify">
+                        <a href="#" target="_blank" onclick="return false;" rel="noopener noreferrer" title="spotify">
                             <i class="bi bi-cloud"></i>
                         </a>
                     </div>
@@ -228,14 +229,16 @@
     </div>
     <footer>
         <div class="copyright text-center">
-            code written by me, but heavily inspired by <a href="https://babygrande.com/">babygrande </a> and
-            <a href="https://morlarecords.com/home"> morla records </a>
+            code written by me, but heavily inspired by <a href="https://babygrande.com/" target="_blank">babygrande
+            </a> and
+            <a href="https://morlarecords.com/home" target="_blank"> morla records </a>
         </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

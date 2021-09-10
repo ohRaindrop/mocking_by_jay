@@ -37,7 +37,7 @@ h1, h2{
 
 section{
     position:relative;
-    min-height: 90vh;
+    min-height: 100vh;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
@@ -122,15 +122,15 @@ nav{
     color:#F46036;
 }
 
-.custom-link{
+.navlink.custom-link{
     color:#818479;
 }
 
-.custom-link:hover{
+.navlink.custom-link:hover{
     color:#F46036;
 }
 
-.custom-link.active{
+.navlink.custom-link.active{
     color:#349AF4;
 }
 
