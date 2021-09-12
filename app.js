@@ -22,7 +22,7 @@ setInterval(() => {
 
         }
     }
-}, 1500);
+}, 750);
 
 // boolean, returns true if the element is in the viewport
 function inViewport(el) {
